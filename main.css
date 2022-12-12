@@ -1,0 +1,98 @@
+body {
+    background-color: #eeedf2; 
+    color: #6f7287;
+}
+header {
+    color: #f05537;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+header > a {
+    text-decoration: none;
+    color: #f05537;
+}
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.categories > div > h2 {
+    padding-left: 20px;
+}
+.tabbed-nav__container {
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+.tabbed-nav__container > button {
+    padding: 0px 100px ;
+   
+}
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.mainHead {
+    margin-left: 30px;
+}
+.images {
+    width: 400px;
+    height: 200px;
+}
+.mainEvents {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "newYork outdoor"
+    "online .";
+}
+.newYork {
+    grid-area: newYork;
+}
+.tech {
+    grid-area: outdoor;
+}
+.online {
+    grid-area: online;
+}
+.el4 {
+    display: flex;
+    justify-content: flex-end;
+}
+.beforeEnd {
+    display: flex;
+    justify-content: center;
+}
+footer > .endd {
+    display: flex;
+    justify-content: end;
+    background-color: #1e0a3c;
+    color: #FFFFFF;
+}
+.tabbed-nav__container > button:hover {
+    color: red;
+}
+@media screen and (max-width: 700px) {
+    .mainEvents {
+        display: block;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .new {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+    }
+}
